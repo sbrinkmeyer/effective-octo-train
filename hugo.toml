@@ -29,10 +29,22 @@ pluralizelisttitles = false
     weight     = 2
 
 [[menu.main]]
+    name       = "Work"
+    identifier = "menu.work"
+    url        = "/work/"
+    weight     = 3
+
+[[menu.main]]
+    name       = "Hobbies"
+    identifier = "menu.hobbies"
+    url        = "/hobbies/"
+    weight     = 4
+
+[[menu.main]]
     identifier = "contact"
     name       = "Contact"
     url        = "/contact/"
-    weight     = 3
+    weight     = 5
 
 [[menu.topbar]]
     weight = 1
