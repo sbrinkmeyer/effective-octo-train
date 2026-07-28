@@ -1,50 +1,62 @@
 +++
 title = "Work"
-id = "work"
+showDate = false
+showPagination = false
 +++
 
-# Work
+I'm a cloud engineer and architect. DevSecOps first, CI/CD all the things.
 
-I’m a cloud engineer and architect focused on DevSecOps-first delivery.
+How I default to working:
 
-My default approach is:
-- CI/CD all the things, all the time
-- Build secure paths early, not late
-- Fail fast, fail forward, and improve continuously
+- Automate it, or it didn't really happen
+- Build the secure path early, not as a retrofit
+- Fail fast, fail forward, keep improving the system
 
-## Current Focus
+## Now — TerraFlow Energy
 
-### TerraFlow Energy — EMS customer deployments
+I help deliver TerraFlow Energy's EMS (Electricity Management System) into customer
+environments. Every customer environment is a little different, so the interesting problem
+is rarely the software — it's making delivery repeatable when the target keeps moving.
 
-I help deliver TerraFlow Energy’s EMS (Electricity Management System) to customer environments.
+What that covers:
 
-Core responsibilities:
 - Architecture and deployment strategy for customer-ready EMS environments
 - CI/CD pipeline design and automation
 - Security-first engineering across build, release, and operations
 - Reliability, observability, and operational hardening
 
-## How I Work
+## Before this
 
-### DevSecOps first
-Security is integrated into delivery workflows from the beginning so releases stay fast and trustworthy.
+Cloud SRE and architecture work across three industries that look nothing alike.
 
-### Automation over handoffs
-I prioritize repeatable pipelines and infrastructure automation to reduce manual risk and speed up delivery.
+**Oracle** — Cloud SRE and architect.
+<!-- TODO: a line or two on scope. What did you run, how big was it, what are you proud of? -->
 
-### Learn-forward mindset
-When things break, I focus on fast feedback, clear ownership, and improving the system—not reverting to old habits.
+**Shell** — Oil and gas.
+<!-- TODO: your title and what you focused on. -->
 
-## What I Build
+**Nike** — Global footwear and apparel.
+<!-- TODO: your title and what you focused on. -->
+
+The through-line is the same in all of them: production systems people actually depend on,
+where being careless has a real cost. Energy, oil and gas, and retail have completely
+different regulatory shapes and failure modes, and all three punish teams that treat
+delivery as an afterthought.
+
+## How I work
+
+**DevSecOps first.** Security belongs in the delivery workflow from the start. Bolted on at
+the end, it just becomes the thing everyone routes around.
+
+**Automation over handoffs.** Repeatable pipelines and infrastructure automation beat tribal
+knowledge and manual runbooks every time.
+
+**Learn-forward.** When something breaks, the useful questions are about fast feedback and
+clear ownership — not who to blame, and not which old habit to revert to.
+
+## What I build
 
 - Cloud platform patterns for scalable delivery
 - CI/CD pipelines that support frequent, safe releases
 - Secure-by-default workflows and guardrails
-- Deployment playbooks for production operations
-
-## Optional Artifacts to Add
-
-As you update this page, link to a few concrete artifacts:
-- Public talks, demos, or architecture diagrams
-- Sanitized pipeline patterns or IaC examples
-- Case-study style outcomes (problem → approach → impact)
+- Deployment playbooks that hold up in production

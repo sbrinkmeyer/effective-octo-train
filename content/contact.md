@@ -1,6 +1,7 @@
 +++
 title = "Contact"
-id = "contact"
+showDate = false
+showPagination = false
 +++
 
 # Like to hear from you

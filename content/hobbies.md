@@ -1,41 +1,45 @@
 +++
 title = "Hobbies"
-id = "hobbies"
+showDate = false
+showPagination = false
 +++
 
-# Hobbies
+I spend my working life on systems nobody can see. Outside of it I make things I can
+actually pick up and hold, which turns out to be the counterweight I needed.
 
-My work life is cloud engineering, architecture, and DevSecOps.
+## Building electric guitars
 
-My non-work life is about making real things with my hands.
-That balance keeps me grounded.
+Mostly Stratocasters and Telecasters.
 
-## What I’m Into Right Now
+What I like about it is that a guitar doesn't care how confident you are. The neck either
+sits right in your hand or it doesn't. Shaping, fitting, dialing one in until it feels
+correct is slow work with no shortcuts and no way to fake the result — which is a pretty
+refreshing change of pace from software.
 
-### Building electric guitars
+<!-- TODO: drop a photo of a build in here. Even a half-finished body on the bench. -->
 
-I’m currently deep into building electric guitars, with most of my focus on:
-- Stratocasters
-- Telecasters
+## The farm
 
-I enjoy the precision and patience involved in shaping, fitting, and dialing in an instrument so it feels right in your hands.
+This is where most of my non-guitar attention goes right now:
 
-### Farm life and physical work
-
-The farm is my next major focus area, including:
 - Orchard work
 - Forestation projects
 - Dairy goats
 - Hens
 
-This kind of work is practical and real, and it gives me a strong counterweight to spending most of my career building digital systems.
+Goats and fruit trees operate on their own schedule and are completely indifferent to
+sprint boundaries. The feedback loop is measured in seasons instead of minutes, and you
+can't automate your way out of the parts you'd rather skip.
 
-### Drones
+<!-- TODO: photos — orchard, the goats, whatever's looking good this season. -->
 
-I still love drones, even though I haven’t had as much interest lately.
-I keep the hobby close and come back to it in seasons.
+## Drones
 
-## Why This Matters
+Still love them, even though they've been quiet for a while. It's a hobby I keep close and
+come back to in seasons rather than one I've given up on.
 
-I spend my professional life building invisible systems.
-Building physical things—guitars, land, and farm projects—helps me stay centered and connected to tangible progress.
+## Why any of this
+
+Building physical things keeps me grounded and connected to tangible progress. I've spent a
+career on infrastructure that's invisible when it works — there's real value in ending the
+day with something you can hand to somebody.

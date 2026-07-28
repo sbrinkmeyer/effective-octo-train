@@ -1,0 +1,22 @@
+locale = "en-us"
+label = "English"
+weight = 1
+
+title = "Scott Brinkmeyer"
+copyright = "&copy; 2026 Scott Brinkmeyer"
+
+[params]
+  dateFormat = "January 2, 2006"
+  mainSections = ["posts"]
+  description = "Cloud engineer and architect. DevSecOps first. CI/CD all the things."
+
+[params.author]
+  name = "Scott Brinkmeyer"
+  headline = "Cloud engineer and architect"
+  bio = "DevSecOps first. CI/CD all the things."
+  links = [
+    { github = "https://github.com/sbrinkmeyer" },
+    { bluesky = "https://bsky.app/profile/brinkmeyer.bsky.social" },
+    { facebook = "https://facebook.com/sbrinkmeyer" },
+    { email = "mailto:scott.brinkmeyer@outlook.com" },
+  ]

@@ -1,85 +1,79 @@
 +++
-title = 'Devsecops Generated'
-date = 2024-11-24T13:25:04-06:00
+title = 'The State of DevSecOps in 2026'
+date = 2026-07-28T09:00:00-05:00
 draft = false
+tags = ['DevSecOps', 'CI/CD', 'Supply Chain']
 +++
 
-### **Demystifying DevSecOps: A Beginner's Guide for Business Owners**
+Two years ago I'd have told you the whole game was shifting security left. Get the scans
+into the pipeline, catch things before they ship, done.
 
-In today’s fast-paced digital world, delivering software quickly and securely is critical. DevSecOps, a fusion of Development, Security, and Operations, addresses these needs by embedding security practices directly into the software development lifecycle (SDLC). By automating and integrating security, teams can achieve faster delivery without sacrificing safety—a necessity in an era of increasing cyber threats.
+That wasn't wrong, exactly. But the industry spent a decade pushing security, testing, and
+deployment onto developers, and somewhere in there it stopped scaling. The pushback that
+surfaced in 2025 even has a name now — people are calling it shifting *down* instead of
+left — and the complaint underneath it is simple: [developers didn't sign up to be YAML
+engineers](https://dev.to/meena_nukala/devops-in-2026-what-it-really-means-now-and-where-its-heading-fast-2jkg).
 
-#### **What is DevSecOps?**
+That's the most interesting change, and it's a correction rather than a reversal. Early is
+still right. What we got wrong was assuming early meant *somebody else's problem now*.
 
-At its core, DevSecOps is about shifting security to the forefront of development. Traditionally, security testing occurred at the end of the SDLC, often delaying launches or leaving vulnerabilities unnoticed. DevSecOps eliminates these inefficiencies by making security an integral, ongoing part of development, from planning to deployment.
+## What actually changed
 
-This approach not only protects against cyber risks but also supports agility. For example, Amazon deploys code every 11.7 seconds, demonstrating how continuous integration (CI) and continuous delivery (CD) pipelines, enhanced by DevSecOps, enable rapid and secure software releases【12】【13】.
+**Security stopped being a best practice and became a filing deadline.**
 
----
+The EU Cyber Resilience Act takes effect in September 2026, with real vulnerability
+reporting obligations and SBOM requirements attached
+([overview](https://cloudsmith.com/blog/the-2026-guide-to-software-supply-chain-security-from-static-sboms-to-agentic-governance)).
+That drags this conversation out of engineering and onto a compliance calendar. If you sell
+software into Europe, "we're planning to get to SBOMs" stops being an acceptable answer
+this year.
 
-#### **Key Benefits of DevSecOps**
+The SBOM question itself moved, too. Nobody serious asks whether you can generate one — the
+tooling does that. The question is whether you can *act* on it when something lands: can
+you tell me today which deployed environments contain the bad version, and how fast can you
+get them off it? [Generating an artifact nobody reads is
+theater](http://sdtimes.com/software-supply-chain-security/).
 
-1. **Enhanced Security**:
-   - Vulnerabilities are identified and resolved early, reducing the risk of breaches.
-   - Automation tools, like OWASP ZAP or Burp Suite, ensure consistent and thorough security testing【13】.
+**AI became a dependency you can't scan.**
 
-2. **Increased Agility**:
-   - Automated processes streamline development, allowing companies like Facebook to deploy updates 50% faster than traditional methods【13】.
+This is the genuinely new one. A model in your stack is a third-party dependency, but not
+one your existing scanners can read — no lockfile to parse, no CVE feed to diff against.
+Hence the [ML-BOM and AI-BOM ideas making the
+rounds](https://xygeni.io/blog/owasp-global-appsec-eu-2026-vienna-key-takeaways-on-secure-software-supply-chain-mcp-security-an-the-ai-bom/):
+an inventory of models, where the training data came from, and what the thing is allowed to
+touch.
 
-3. **Cost Savings**:
-   - Fixing vulnerabilities early reduces the cost of remediation by up to 90%, compared to addressing issues post-deployment【12】.
+The attack surface moved to match. Agents commit code. MCP servers execute tool calls on
+someone's behalf. Malicious packages are being written to target the AI tooling rather than
+the humans using it.
 
-4. **Improved Collaboration**:
-   - DevSecOps fosters teamwork across development, operations, and security, breaking down silos and enabling shared responsibility for secure and efficient delivery【13】.
+I don't think anybody has this solved, mine included. What I'd say is that the shape is
+familiar even when the contents aren't: an under-reviewed thing, holding credentials, doing
+work inside your pipeline. We've met that problem before.
 
----
+## What didn't change
 
-#### **Practical Steps to Implement DevSecOps**
+The durable parts are boring. That's why they're durable.
 
-1. **Automate Security**:
-   Automation is the foundation of DevSecOps. Incorporating tools like Jenkins or Azure DevOps into CI/CD pipelines ensures security testing is continuous, enabling rapid delivery without sacrificing quality【13】.
+**Automate it, or it didn't really happen.** A control that depends on somebody remembering
+is a control you don't have. That was true before this tooling cycle and it'll be true
+after it.
 
-2. **Adopt Infrastructure as Code (IaC)**:
-   IaC tools like Ansible automate infrastructure management, allowing for consistency and efficiency as systems evolve. This approach has been shown to cut deployment times by up to 75%【12】【13】.
+**Build the secure path early, not as a retrofit.** Security bolted on at the end just
+becomes the thing everyone routes around. The correction above doesn't undo this — it means
+the secure path has to be the *easy* path. Otherwise you've built a speed bump and called
+it a guardrail.
 
-3. **Integrate Continuous Feedback Loops**:
-   Real-time feedback ensures that vulnerabilities are addressed immediately. Organizations like Google leverage this method to improve user satisfaction and security simultaneously【13】.
+**Repeatable beats documented.** A pipeline that does the thing beats a runbook describing
+the thing. I deliver into customer environments that are all a little different, and the
+only approach that survives that is making delivery itself repeatable instead of
+accumulating tribal knowledge about each one.
 
-4. **Focus on Collaboration**:
-   Cross-functional teams, regular stand-ups, and shared communication platforms (e.g., Slack) enhance cooperation, ensuring security is prioritized throughout development【12】【13】.
+## Where I'd put the effort
 
----
+If a team is behind and can only fix one thing: make your inventory real. Not the SBOM
+artifact — the actual ability to answer *where is this version running right now.*
 
-#### **The Business Case for DevSecOps**
-
-For business product owners, the value of DevSecOps lies in its ability to balance speed and security. Companies implementing DevSecOps report a 50% reduction in critical vulnerabilities and a 40% faster time-to-market for new features【13】. Furthermore, the integration of AI and machine learning is transforming DevSecOps, enabling predictive security measures and reducing downtime caused by manual oversight【12】.
-
----
-
-#### **Looking Ahead: DevSecOps Trends for 2024**
-
-As we move into 2024, several trends are shaping the future of DevSecOps:
-
-- **Increased Automation**:
-  Advanced AI tools will further automate security, enhancing precision and agility.
-
-- **Tool Consolidation**:
-  Streamlined toolchains will reduce inefficiencies and costs, with 75% of organizations already adopting this approach【12】.
-
-- **Evolving Software Bill of Materials (SBOMs)**:
-  SBOMs, which catalog software components, will become more standardized and integrated into security practices【12】.
-
----
-
-#### **Statistics Snapshot**
-
-- 75% of organizations are consolidating their security tools to improve efficiency【12】.
-- Companies like LinkedIn have cut deployment times by 75% through automation【13】.
-- Early vulnerability detection reduces remediation costs by up to 90%【12】.
-
----
-
-#### **Conclusion**
-
-For businesses looking to remain competitive, DevSecOps offers a compelling strategy to achieve agility and security. By automating processes, fostering collaboration, and integrating security from the start, teams can deliver robust software faster than ever. As AI and automation continue to advance, the potential for even greater efficiency and resilience in DevSecOps is limitless.
-
-Would you like to include images illustrating CI/CD pipelines or charts showing cost savings and agility improvements? Let me know, and I can create or find them for you!
+Most of the pain during a supply chain incident isn't the patch. It's not knowing where to
+apply it. Everything else gets easier once you can answer that question in minutes instead
+of days.

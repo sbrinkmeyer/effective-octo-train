@@ -1,0 +1,29 @@
+# -- Main Menu --
+# Congo links the site title back to the home page, so there's no "Home" entry.
+# pageRef points at a content path; weight sets the order.
+
+[[main]]
+  name = "Work"
+  pageRef = "work"
+  weight = 10
+
+[[main]]
+  name = "Hobbies"
+  pageRef = "hobbies"
+  weight = 20
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 30
+
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 40
+
+[[main]]
+  identifier = "search"
+  weight = 99
+  [main.params]
+    action = "search"

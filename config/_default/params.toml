@@ -1,0 +1,60 @@
+# -- Theme Options --
+# Congo docs: https://jpanther.github.io/congo/docs/configuration/#theme-parameters
+
+colorScheme = "slate"
+defaultAppearance = "dark"   # slate's light variant is rough; commit to dark
+autoSwitchAppearance = false # don't flip to light on a light-mode OS
+
+enableSearch = true
+enableCodeCopy = true
+enableImageLazyLoading = true
+enableImageWebp = true
+enableQuicklink = true
+
+fingerprintAlgorithm = "sha256"
+
+[header]
+  layout = "basic"
+  showTitle = true
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  # "page" renders content/_index.md as written.
+  # Swap to "profile" for the author-card look (photo, headline, bio, links).
+  layout = "page"
+  showRecent = true
+  recentLimit = 3
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false      # single-author site; the name is already in the header
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false        # no "edit this page on GitHub" links
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = false
+  showTableOfContents = false
+  showTaxonomies = true
+  showWordCount = false
+  showComments = false
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showTableOfContents = false
+  showTaxonomies = false
+  groupByYear = false
+  paginationWidth = 1
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
