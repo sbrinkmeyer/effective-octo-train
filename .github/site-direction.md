@@ -16,7 +16,7 @@ This plan is for a personal site that showcases work and hobbies without requiri
    - A clear contact action
 
 2. Work (`/work/`)
-   - 3–6 concise project summaries
+   - 3-6 concise project summaries
    - For each: problem, what you did, impact, tools
    - Link to external artifacts (GitHub, docs, talks) when possible
 
@@ -59,14 +59,14 @@ Week 2
 - Tighten nav labels and page intros.
 
 Week 3
-- Add 2–3 more work items.
+- Add 2-3 more work items.
 - Add one short "Now" update (optional, not a blog post).
 
 Week 4
 - Review with UX + design checklist.
-- Deploy cleanly and stop—only update when meaningful.
+- Deploy cleanly and stop-only update when meaningful.
 
-## What “Done Enough” Looks Like
+## What "Done Enough" Looks Like
 
 - A visitor can answer in 30 seconds:
   - Who you are

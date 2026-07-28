@@ -12,11 +12,9 @@ How I default to working:
 - Build the secure path early, not as a retrofit
 - Fail fast, fail forward, keep improving the system
 
-## Now — TerraFlow Energy
+## Now - TerraFlow Energy
 
-I help deliver TerraFlow Energy's EMS (Electricity Management System) into customer
-environments. Every customer environment is a little different, so the interesting problem
-is rarely the software — it's making delivery repeatable when the target keeps moving.
+I help deliver TerraFlow Energy's EMS (Electricity Management System) into customer environments. Every customer environment is a little different, so the interesting problem is rarely the software - it's making delivery repeatable when the target keeps moving.
 
 What that covers:
 
@@ -29,30 +27,21 @@ What that covers:
 
 Cloud SRE and architecture work across three industries that look nothing alike.
 
-**Oracle** — Cloud SRE and architect.
-<!-- TODO: a line or two on scope. What did you run, how big was it, what are you proud of? -->
+**Oracle** - Cloud SRE and architect. <!-- TODO: a line or two on scope. What did you run, how big was it, what are you proud of? -->
 
-**Shell** — Oil and gas.
-<!-- TODO: your title and what you focused on. -->
+**Shell** - Oil and gas. <!-- TODO: your title and what you focused on. -->
 
-**Nike** — Global footwear and apparel.
-<!-- TODO: your title and what you focused on. -->
+**Nike** - Global footwear and apparel. <!-- TODO: your title and what you focused on. -->
 
-The through-line is the same in all of them: production systems people actually depend on,
-where being careless has a real cost. Energy, oil and gas, and retail have completely
-different regulatory shapes and failure modes, and all three punish teams that treat
-delivery as an afterthought.
+The through-line is the same in all of them: production systems people actually depend on, where being careless has a real cost. Energy, oil and gas, and retail have completely different regulatory shapes and failure modes, and all three punish teams that treat delivery as an afterthought.
 
 ## How I work
 
-**DevSecOps first.** Security belongs in the delivery workflow from the start. Bolted on at
-the end, it just becomes the thing everyone routes around.
+**DevSecOps first.** Security belongs in the delivery workflow from the start. Bolted on at the end, it just becomes the thing everyone routes around.
 
-**Automation over handoffs.** Repeatable pipelines and infrastructure automation beat tribal
-knowledge and manual runbooks every time.
+**Automation over handoffs.** Repeatable pipelines and infrastructure automation beat tribal knowledge and manual runbooks every time.
 
-**Learn-forward.** When something breaks, the useful questions are about fast feedback and
-clear ownership — not who to blame, and not which old habit to revert to.
+**Learn-forward.** When something breaks, the useful questions are about fast feedback and clear ownership - not who to blame, and not which old habit to revert to.
 
 ## What I build
 
